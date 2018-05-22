@@ -1,6 +1,8 @@
 ![Screenshot](http://i.imgur.com/fe1Y7cl.png)
 # Recent changes
 
+* Version 1.1.0.0 adds custom URL Protocol support for launching Eve from a web page
+
 * Version 1.0.0.19 fixes a new ArgumentNullException error from 1.0.0.18
 
 * Version 1.0.0.18 includes a fix for Authenticators requiring 2-factor Authenticator codes each time, the Authenticator window popping up an error message when pressing Enter, and also for the Settings file sometimes losing stored passwords. Timeouts have been increased from 5 to 30 seconds.
@@ -150,6 +152,18 @@ Examples:
 2. Launch account1 and account2 via Inner Space with DirectX 11 and Singularity server: ISBoxerEVELauncher.exe -dx11 -singularity -innerspace account1 account2
 
 3. Launch MyChracter One and MyCharacter Two via exefile.exe with DirectX 9 and Tranquility server: ISBoxerEVELauncher.exe -dx9 -tranquility -eve "MyCharacter One" "MyCharacter Two"
+
+# Launching EVE from a Web Page
+
+As of version 1.1.0.0 you may automatically launch EVE for one of your characters by clicking a link that looks like this:
+
+`isboxer-eve-launcher://launch/?character=Your%20Character%20Name`
+
+For this to work, you must run ISBoxerEVELauncher at least once on your local computer.  Doing so will register the custom URL Protocol handler `isboxer-eve-launcher`.  After you've done that, you can load up a web page containing links like the above and simply click them to login to EVE for each of your accounts.
+
+### Administrator Access required
+
+Note that for the `isboxer-eve-launcher` protocol handler to work, the very first time you start ISBoxerEVELauncher it will ask for administrative access to your computer.  This is required in order to register the custom URL handler.  You won't ever need administrative privileges again, but you do the first time.
 
 # Notes on Security of this and other EVE Launchers
 This EVE Launcher is designed first and foremost to protect your accounts. Your passwords are never kept in memory in plaintext, never stored as the same string twice in your Settings file (all your passwords the same? check the file and you cannot tell), and can only be stored if protected by a Master Password. **This makes the ISBoxer EVE Launcher, as far as we can tell, more secure than the official EVE Launcher**, which indicates that saving the accounts through it is insecure -- we would agree with that.

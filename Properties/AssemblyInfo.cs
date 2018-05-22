@@ -8,11 +8,11 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ISBoxer EVE Launcher")]
-[assembly: AssemblyDescription("An EVE Launcher for ISBoxer. Special thanks to open source EVE Launcher projects CliLauncher and IsBridgeUp, and users logical and HunterAlvi")]
+[assembly: AssemblyDescription("An EVE Launcher for ISBoxer. Special thanks to open source EVE Launcher projects CliLauncher and IsBridgeUp, and users logical, HunterAlvi and Mr_Xist")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Lavish Software LLC")]
 [assembly: AssemblyProduct("ISBoxer EVE Launcher")]
-[assembly: AssemblyCopyright("Copyright © 2016-2017")]
+[assembly: AssemblyCopyright("Copyright © 2016-2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.0.19")]
-[assembly: AssemblyFileVersion("1.0.0.19")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
