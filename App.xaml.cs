@@ -661,7 +661,7 @@ namespace ISBoxerEVELauncher
         {
             AppDomain.CurrentDomain.UnhandledException += CurrentDomain_UnhandledException;
 
-            CommandLine = e.Args;
+            CommandLine = UrlProtocol.ConvertCommandLine(e.Args);
 
             if (!TransmitCommandLine())
             {
