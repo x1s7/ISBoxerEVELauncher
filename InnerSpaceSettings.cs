@@ -260,7 +260,8 @@ namespace ISBoxerEVELauncher
             }
             catch (System.IO.FileNotFoundException e)
             {
-                throw;
+                // When no GameConfiguration.XML file exists, just return a new empty set
+                return new Set();
             }
             catch (Exception e)
             {
