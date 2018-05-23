@@ -101,7 +101,14 @@ namespace ISBoxerEVELauncher
             {
                 // Compute the command line to replace "ISBoxerEVELauncher.exe --ViaUrlProtocol isboxer-eve-launcher://command/?arguments"
 
-                CommandLine = Url2CommandLine(CommandLine[1]);
+                if (CommandLine.Length == 2)
+                {
+                    CommandLine = Url2CommandLine(CommandLine[1]);
+                }
+                else
+                {
+                    throw new Exception(String.Format("Usage: {0} {1} url", MyExePath, VIA_URL_PROTOCOL_ARGUMENT));
+                }
             }
 
             return CommandLine;
